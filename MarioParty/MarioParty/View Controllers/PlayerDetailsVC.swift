@@ -16,6 +16,9 @@ class PlayerDetailsVC: UIViewController {
     @IBOutlet weak var starsImageView: UIImageView!
     @IBOutlet weak var backgroundImageView: UIImageView!
     var playerSoundEffect: AVAudioPlayer?
+    var audioPlayer: AVAudioPlayer?
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
         nameLabel.text = selectedPlayer.name
@@ -25,10 +28,15 @@ class PlayerDetailsVC: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    
+    
+    
     @IBAction func randomizeStars(_ sender: Any) {
         var stars = ["Star1", "Star2", "Star3", "Star4", "Star5"]
         let randomStar = stars.randomElement()!
         starsImageView.image = UIImage(named: randomStar)
+        playDiceSound(musicName: "crowd.mp3")
+
     }
     @IBAction func playCharacterSound(_ sender: Any) {
         playMusic(musicName: selectedPlayer.musicName())
@@ -41,10 +49,28 @@ class PlayerDetailsVC: UIViewController {
         do{
             playerSoundEffect = try AVAudioPlayer(contentsOf: url)
             playerSoundEffect?.play()
+            
+            
         } catch {
             
         }
     }
+    
+    func playDiceSound(musicName: String){
+        let path = Bundle.main.path(forResource: "crowd", ofType: "mp3")!
+        let url = URL(fileURLWithPath: path)
+        
+        do{
+            audioPlayer = try AVAudioPlayer(contentsOf: url)
+            audioPlayer?.play()
+        } catch {
+            
+        }
+        
+    }
+    
+        
+    
     /*
     // MARK: - Navigation
 
@@ -56,3 +82,4 @@ class PlayerDetailsVC: UIViewController {
     */
 
 }
+

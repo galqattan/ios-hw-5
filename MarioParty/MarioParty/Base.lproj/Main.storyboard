@@ -87,6 +87,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="dice"/>
                                 <connections>
+                                    <action selector="d:" destination="2Ep-O2-LdF" eventType="touchUpInside" id="lXN-Lw-hQo"/>
+                                    <action selector="dicesound:" destination="2Ep-O2-LdF" eventType="touchUpInside" id="DLC-QL-3va"/>
+                                    <action selector="die:" destination="2Ep-O2-LdF" eventType="touchUpInside" id="rlG-aZ-FYz"/>
                                     <action selector="randomizeStars:" destination="moA-X3-dsJ" eventType="touchUpInside" id="2RE-Ya-JPu"/>
                                 </connections>
                             </button>
@@ -114,8 +117,9 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GkX-3e-R6f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="2Ep-O2-LdF" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="884" y="138"/>
+            <point key="canvasLocation" x="882.60869565217399" y="137.94642857142856"/>
         </scene>
     </scenes>
     <resources>

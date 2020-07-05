@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var playerImageView: UIImageView!
     var playerSoundEffect: AVAudioPlayer?
     var backgroundMusic: AVAudioPlayer?
+
     override func viewDidLoad() {
         super.viewDidLoad()
     playBackgroundMusic(musicName: "BG.wav")
@@ -45,6 +46,7 @@ class ViewController: UIViewController {
             
         }
     }
+    
     
 @IBAction func randomPlayer(_ sender: Any) {
         let randomPlayer = players.randomElement()!

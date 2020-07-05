@@ -25,6 +25,7 @@
 		D22BA088242A4006002EC169 /* MarioCharactersAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D22BA087242A4006002EC169 /* MarioCharactersAssets.xcassets */; };
 		DFD43D1D24B1077900C45C3E /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD43D1C24B1077900C45C3E /* Player.swift */; };
 		DFD43D2024B11F9A00C45C3E /* PlayerDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD43D1F24B11F9A00C45C3E /* PlayerDetailsVC.swift */; };
+		DFD43D2324B1471400C45C3E /* crowd.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DFD43D2224B1471400C45C3E /* crowd.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		D22BA087242A4006002EC169 /* MarioCharactersAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = MarioCharactersAssets.xcassets; sourceTree = "<group>"; };
 		DFD43D1C24B1077900C45C3E /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		DFD43D1F24B11F9A00C45C3E /* PlayerDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerDetailsVC.swift; sourceTree = "<group>"; };
+		DFD43D2224B1471400C45C3E /* crowd.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = crowd.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 		9449EE4024299E69006D3BD4 /* MarioParty */ = {
 			isa = PBXGroup;
 			children = (
+				DFD43D2124B1459F00C45C3E /* Sounds */,
 				DFD43D1E24B11F4500C45C3E /* View Controllers */,
 				DFD43D1B24B1071600C45C3E /* Models */,
 				9449EE4124299E69006D3BD4 /* AppDelegate.swift */,
@@ -141,6 +144,14 @@
 				DFD43D1F24B11F9A00C45C3E /* PlayerDetailsVC.swift */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		DFD43D2124B1459F00C45C3E /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				DFD43D2224B1471400C45C3E /* crowd.mp3 */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,6 +216,7 @@
 				9449EE4E24299E6D006D3BD4 /* LaunchScreen.storyboard in Resources */,
 				9449EE6A2429B503006D3BD4 /* Mario.WAV in Resources */,
 				9449EE5824299FDB006D3BD4 /* SuperMario256.ttf in Resources */,
+				DFD43D2324B1471400C45C3E /* crowd.mp3 in Resources */,
 				D22BA088242A4006002EC169 /* MarioCharactersAssets.xcassets in Resources */,
 				9449EE722429B54B006D3BD4 /* Yoshi.WAV in Resources */,
 				9449EE4B24299E6D006D3BD4 /* Assets.xcassets in Resources */,
@@ -373,13 +385,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 58U9M4P57N;
+				DEVELOPMENT_TEAM = Q2PX5YHRDG;
 				INFOPLIST_FILE = MarioParty/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.kuwaitCodes.MarioParty;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ghadeerAlqattan.MarioParty;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -391,13 +403,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 58U9M4P57N;
+				DEVELOPMENT_TEAM = Q2PX5YHRDG;
 				INFOPLIST_FILE = MarioParty/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.kuwaitCodes.MarioParty;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ghadeerAlqattan.MarioParty;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
